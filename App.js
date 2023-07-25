@@ -7,9 +7,11 @@ export default function App() {
   return (
     <View style={{ backgroundColor: "plum", flex: 1, padding: 50 }}>
       <ScrollView>
-        <Button title="Press here" onPress={() => console.log("button pressed")} color="midnightblue" disabled/>
+        <Button title="Press here" onPress={calculate} color="midnightblue" disabled={false}/>
       </ScrollView>
     </View>
   );
 }
-//view component basic
+function calculate(){
+  console.log("calculating....zz")
+}
