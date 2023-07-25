@@ -1,10 +1,11 @@
-import { View } from "react-native";
+import { Text, View } from "react-native";
+const logoImg = require("./assets/adaptive-icon.png")
 
 export default function App() {
   return (
-    <View style={{ backgroundColor: "blue", flex: 1 }}>
-      <View style={{ width: 200, height: 200, backgroundColor: "plum" }}></View>
-      <View style={{ width: 200, height: 200, backgroundColor: "green " }}></View>
+    <View style={{ backgroundColor: "plum", flex: 1, padding: 60 }}>
+      <Text><Text style={{color: "white"}}>Hello</Text> World</Text>
     </View>
   );
 }
+ //view component basic
