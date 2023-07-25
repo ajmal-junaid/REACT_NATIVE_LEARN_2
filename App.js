@@ -7,7 +7,7 @@ export default function App() {
   return (
     <View style={{ backgroundColor: "plum", flex: 1, padding: 50 }}>
       <ScrollView>
-        <Button title="Press here" onPress={() => console.log("button pressed")} color="midnightblue"/>
+        <Button title="Press here" onPress={() => console.log("button pressed")} color="midnightblue" disabled/>
       </ScrollView>
     </View>
   );
