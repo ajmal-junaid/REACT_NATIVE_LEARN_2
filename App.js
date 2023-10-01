@@ -8,7 +8,11 @@ export default function App() {
   return (
     <View style={{ backgroundColor: "blue", flex: 1, paddingTop: 30 }}>
       <Button title="Press here" onPress={() => setIsModal(!isModal)} />
-      <Modal visible={isModal} onRequestClose={() => setIsModal(false)} animationType="slide" presentationStyle="pageSheet">
+      <Modal  visible={isModal}
+       onRequestClose={() => setIsModal(false)}
+        animationType="slide" 
+        presentationStyle="pageSheet" //ios only
+        >
         <View style={{ flex: 1, backgroundColor: "white", padding: 50 }}>
           <Text>Modal content ok</Text>
           <Button onPress={() => setIsModal(!isModal)} title="close modal" color="green" />
